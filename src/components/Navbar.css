@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+li {
+    list-style: none;   
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+.navbar {
+    line-height: 10vh;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: transparent;
+    right: 0;
+    width: 100%;
+    padding: 2rem 9%;  
+}
+.logo {
+    font-size: 25px;
+
+    color: var(--text-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+
+    gap: 2.1rem;
+}
+.nav-links li {
+    font-size: 20px;
+    padding: 0 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    font-size: 1.8rem;
+    transition: .3s;
+}
+button {
+    border: none;
+    background: none;
+    font-size: 20px;
+
+    color: var(--text-color);
+}
+.mobil-menu-icon {
+    display: none;
+    
+}
+
+
+
+
+
+@media (max-width: 768px){
+
+
+    
+    .nav-links {
+        display: none;
+    }
+    .nav-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        left: 0;
+        top: 10%;
+        transition: all 0. 5s ease-in-out;
+        
+        width: 100%;
+        background: var(--bg-color);
+        padding: 1rem 4%;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+
+        
+    }
+    ul li {
+        padding: 32px;
+        width: 100%;
+        transition: all 0. 5s ease-in-out;
+        align-items: center;
+
+
+        font-size: 2rem;
+        padding: .1rem 20%;
+        margin: 0.2rem 0;
+
+    }
+    .mobil-menu-icon {
+        position: absolute;
+        display: block;
+        right: 20px;
+    }
+    .home h1 {
+        font-size: 50px;
+    }
+
+}
+
+
+
+
+@media (max-width: 480px) {
+    nav {
+        background: var(--bg-color);
+    }
+
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: .1rem 20%;
+        background: var(--bg-color);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    }
+
+    nav ul li {
+        display: block;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+};
